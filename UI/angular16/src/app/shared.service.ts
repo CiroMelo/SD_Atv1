@@ -15,14 +15,14 @@ export class SharedService {
   }
 
   addComputer(val:any){
-    return this.http.post(this.APIUrl+'/Computer', val)
+    return this.http.post(this.APIUrl+'/Computer', val);
   }
 
   updateComputer(val:any){
-    return this.http.put(this.APIUrl+'/Computer', val)
+    return this.http.put(this.APIUrl+'/Computer', val);
   }
 
   deleteComputer(val:any){
-    return this.http.delete(this.APIUrl+'/Computer', val)
+    return this.http.delete(this.APIUrl+'/Computer/', val);
   }
 }
