@@ -1,0 +1,45 @@
+<div class="form-froup row">
+
+    <label class="col-sm-2 col-form-label">Placa Mãe</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)] = "placa_mae"
+        placeholder="Placa Mãe do Computador">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Processador</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)] = "processador"
+        placeholder="Processador do Computador">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Memória RAM</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)] = "memoria_ram"
+        placeholder="Quantidade de Memória RAM do Computador em GBs">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Armazenamento</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)] = "armazenamento"
+        placeholder="Capacidade de Armazenamento do Computador em GBs">
+    </div>
+
+    <label class="col-sm-2 col-form-label">GPU</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)] = "gpu"
+        placeholder="Placa de Vídeo do Computador">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Fonte</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)] = "fonte"
+        placeholder="Fonte do Computador">
+    </div>
+</div>
+
+<button (click)="addComputer()" *ngIf="pc.id==0" class="btn btn-primary">
+    Adicionar
+</button>
+<button (click)="updateComputer()" *ngIf="pc.id!=0" class="btn btn-primary">
+    Atualizar
+</button>
